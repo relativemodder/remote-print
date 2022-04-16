@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Hi, {{user.nickname}}!</h1>
-{% for post in posts %}
-<div><p>{{post.author.nickname}} says: <b>{{post.body}}</b></p></div>
-{% endfor %}
+<h1>Ваш профиль</h1>
+Ознакомьтесь с деталями ниже: <br>
+<div class="print_order">
+    <h2>Заказать печать</h2>
+</div>
+<div class="order">
+    <h2>Ваша очередь</h2>
+</div>
 {% endblock %}
