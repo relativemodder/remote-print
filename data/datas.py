@@ -9,3 +9,6 @@ class Data(SqlAlchemyBase):
     id = sqlalchemy.Column(sqlalchemy.Integer,
                            primary_key=True, autoincrement=True)
     way = sqlalchemy.Column(sqlalchemy.String, nullable=True)
+    filament_type = sqlalchemy.Column(sqlalchemy.Integer, nullable=True)
+    color = sqlalchemy.Column(sqlalchemy.Integer, nullable=True)
+
